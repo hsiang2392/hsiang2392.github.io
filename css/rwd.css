@@ -1,0 +1,56 @@
+@media (max-width: 767px)
+{
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+        overflow: hidden;
+    }
+    aside{
+        display: none;
+    }
+    main{
+        margin: 2vh calc(10vh / 4);;
+        width: 63.5vw;
+
+    }
+    label{
+        display: block;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 150%;
+        margin: 2.5vh 2.5vw;
+    }
+    input:checked ~ aside{
+        display: block;
+        width: 70vw;
+        max-width: 70vw;
+        margin-top: 2vh;
+    }
+    input:checked ~ aside>header>p{
+        font-size: 5vw;
+    }
+    input:checked ~ aside>header>img{
+        height: auto;
+        width: 50%;
+    }
+    input:checked ~ aside>nav>a{
+        font-size: 4.5vw;
+    }
+    input:checked ~ aside>article>img{
+        height: auto;
+        width: 75%;
+    }
+    input:checked ~ aside>article>p{
+        font-size: 5vw;
+    }
+    input:checked ~ main{
+        display: none;
+        width: 70vw;
+    }
+    /*input:checked ~ main>object{
+        height: 50%;
+        width: 50%;
+    }*/
+}

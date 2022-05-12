@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+body{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    font-family: 'Noto Sans TC'!important;
+}
+canvas{
+    z-index: -1;
+    position: fixed;
+    filter: blur(0px);
+}
+label{
+    display: none;
+}
+input{
+    display: none;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 25vw;
+    max-width: 400px;
+    margin: 0 calc(10vh / 4);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 70.5vh);
+    background-color: #14213d;
+    border-color: #fca311;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 0 25px 5px #e5e5e5;
+    text-align: center;
+}
+header img{
+    height: auto;
+    max-height: calc(100vh - 80vh);
+    width: 20vw;
+    max-width: calc(100vh - 80vh);
+    border-radius: 50%;
+    background-size: contain;
+    margin: 2vh auto;
+}
+header p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2vw;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70.5vh);
+    margin: calc(6.5vh / 4) 0;
+    background-color: #14213d;
+    border-color: #fca311;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 0 25px 5px #e5e5e5;
+}
+nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5vh;
+    transition: 0.1s;
+    font-size: 2vw;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: #fff;
+    color: #14213d;
+    border-radius: 50%;
+    padding: 1vh 5vw;
+    overflow: hidden;
+    font-size: 2.5vw;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70.5vh);
+    background-color: #14213d;
+    border-color: #fca311;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 0 25px 5px #e5e5e5;
+}
+article img{
+    height: auto;
+    max-height: calc(100vh - 90vh);
+    width: 20vw;
+    max-width: 375px;
+    border-radius: 10%;
+    background-size: contain;
+    margin: 2vh auto;
+}
+article p{
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.75vw;
+}
+main{
+    height: calc(100vh - 10vh / 2);
+    width: 75vw;
+    background-color: #14213d;
+    border-color: #fca311;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 0 25px 5px #e5e5e5;
+    overflow: auto;
+    padding: 0 2.5vw 0 2.5vw;
+}
+main .title{
+    font-weight: bold;
+    font-size: 5vw;
+}
+main p{
+    color: #fff;
+    padding: 2.5vw 0;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+main img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+main::-webkit-scrollbar-track
+{
+	background-color: #14213d;
+}
+
+main::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+main::-webkit-scrollbar-thumb
+{
+	background-color: #fca311;
+	background-image: -webkit-linear-gradient(45deg,
+                                                rgba(255, 255, 255, .2) 25%,
+											transparent 25%,
+											transparent 50%,
+											rgba(255, 255, 255, .2) 50%,
+											rgba(255, 255, 255, .2) 75%,
+											transparent 75%,
+											transparent)
+}
